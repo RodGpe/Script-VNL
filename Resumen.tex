@@ -1,0 +1,54 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc} %para poder usar acentos 
+\title{Resumen coloquio victor neumann lara 2020}
+\date{\today}
+\author{Rodrigo Chávez}
+
+\newtheorem{theorem}{Teorema}
+\begin{document}
+\maketitle
+\section{Resumen}
+Para un punto $x$ en el plano, una línea en forma de $L$ que consiste de un rayo vertical y uno horizontal que amanan de $x$ es llamada $L-linea$ con esquina en $x$. Sean $n$ puntos rojos y $n$ puntos azules en el plano lattice en posición general. Se sabe que el número de intersecciones al crear dos árboles geométricos de puntos rojos y azules en el plano depende de el número de alternancias de color en el cierre convexo. En el año 2013 Mikio Kano provó que se pueden construir 2 árboles, rojo y azul, con segmentos de $L-lineas$ con a lo más una intersección. Esta plática tiene como objetivo presentar los avances del problema donde se buscan dos trayectorias de segmentos de $L-lineas$, monocromáticas, ajenas que visiten cada punto haciendo uso de puntos de Steiner. Un punto Steiner es un punto que no es parte de la entrada original pero es agregado durante la solución del problema.
+\section{Plática}
+Primero que nada quisiera agradecer al comite organizador el haber aceptado mi platica, es la segunda edicion a la que asisito al coloqui y la primera en la que doy platica. Gracias.
+Ahora, como ya vieron el titulo de mi platica consta de un sustantivo y 3 adjetivos, dejenme explicar esto primero introduciondo unas definiciones muy sencillas, las $L-lineas$, para un punto x en el plano una linea en forma de $L$ consitente de dos rayos uno vertical y uno horizontal emanentes de $x$ es llamado una $L-linea$ con esquina en $x$. Una linea vertical u horizontal que pasa por el punto $x$ son consideradas $L-lineas$ especiales. Para cada punto existen exactamente 6 $L-lineas$ con esquina en $x$ (hacer los dibujos en geogebra). Consideramos estas $L-lineas$ como lineas en el plano y consideramos problemas desde este punto de vista. Observe que para dos puntos no en la misma horizontal o vertical en entoces hay 2 $L-lineas$ que pasan a travez de estos dos puntos en comparacion de los puntos en el plano donde existe exactamente una linea que pasa por los puntos. Así pues existe una difenecia entre lineas y $L-lineas$.  Además podemos dar una definicion de posicion general por los medios de $L-linea$. Un conjunto $S$ de puntos se dice estar en posicion general si no tres puntos yacen en la misma $L-linea$ (poner dibujos que ejemplifiquen la diferencia entre las posiciones generales). Si $S$ esta en posicion general dada por la definicion anterior entoces el punto más alto (a la izquierda) y más bajo (a la derecha) de $S$ pueden estar en la misma vertical (horizontal). Sin embargo para cualquier otro punto $x \in S$ sí es cierto que se debe cumplir que ningún otro punto  en $S-\lbrace x \rbrace$ puede estar en la misma vertical vertical (horizontal). Prueba: observemos que si más de un punto yacen en la misma vertical y no son los extremos entonces puedo encontrar una $L-linea$ con los extremos de los lados, pero esto no puede pasar con los extremos, porque aunque esten en la misma vertical no pueden formar una $L-linea$ con ninguno de los demás puntos (poner dibujos para la prueba). Por lo tanto ambas definiciones difieren poco pero requieren las mismas condiciones para ambos para la mayoria de los puntos en $S$. 
+
+Una vez dicho esto haré un pequeño parentesis para presentar un resultado dado por tokunaga para encontrar arboles que no se intersecan (ajenos) que depende de la alternancia de colores de su cierre convexo. 
+\begin{theorem}
+Sean $R$ y $B$ dos conjuntos ajenos de puntos rojos y azules tales que $R, B$ estan en posicion general, Sea $\tau\left( R \cup B \right)$ el numero de aristas $xy$ en el cierre convexo de $(R\cup B)$ tal que uno de $\lbrace x,y \rbrace$ es rojo y el otro es azul entonces el número de cruces en $T_{R} \cup T_{B}$ esta dado por $$max\left\lbrace \frac{\tau(R, B)}{2}, 0 \right\rbrace$$
+\end{theorem}(voy intentar la pruba como la dice jorge y poner dibujos).
+En particular podemos dibujar arboles ajenos si $\tau(R, B) \leq 2x|$. Voy a dar el sketch de la prueba, va como sigue. Primero encerramos todo en un triangulo que contenga 2 puntos de un color(sin perdida de generalidad digamos azules) y el tercero del otro(rojo), por el ahora digamos que agregamos 2 puntos para garantizar esta condicion auqnue no es necesario, omitiré los detalles de porqué esto es cierto ya que no es el resultado principal, ahora dentro de este triangulo si esta vacio o solo tiene puntos de color azul ya acabamos si no encontramos un punto de color rojo que me parte el triangulo en otros triangulo con la misma propieda de dos puntos de un color y el otro punto del otro color, procedemos por induccion y acabamos. Hay algunos detalles de como unir los puntos al arbol pero siempre se puede.
+Este parentesis lo hice para ahora analogamente buscar arboles que no se intersecan utilizando segmentos de $L-lineas$ (esto es para despues: ahora teniendo estos arboles ajenos utilizando 1 punto steiner [decir que es un punto steiner] nos gustaria encontrar no arboles sino trayectorias, y es aquí donde extendimos el resultado dado por Mikio kano. Tambien pensar en poner que la conjetura se resulve parcialmente con el teorema que dice que se puede encajar cualquier arbol con grado maximo 3 estando todos estos en una trayetoria)
+\\\\
+Ahora $C_q[n,k,d]$ es un código lineal con $q$ símbolos, de longitud $n$, con dimensíon $k$, y distancia mínima $d$. 
+Al ser de dimensión $k$ se tiene que el codigo tiene $2^{k}$ palabras de código.
+
+\subsection{Suposiciones}
+De este momento en adelante harán las siguientes suposiciones: 
+\\$n \geq k$
+\\$x_{1} = \mu_{1}, x_{2} = \mu_{2}, \cdots, x_{k} = \mu_{k}$ son los símbolos de infomación
+\\$x_{k+1}, x_{k+2}, \cdots,x_{n}$ son los símbolos de paridad o de redundancia.
+\\\\Ejemplo: Código de paridad par de longitud 4:
+\begin{table}[h!]
+\begin{center}
+\caption{Código de paridad de longitud 4}
+\label{tab:table1}
+\begin{tabular}{l|l|l|r}
+\textbf{$\mu_{1}$}&\textbf{$\mu_{2}$}&\textbf{$\mu_{3}$} \\
+\hline
+$x_{1}$ &$x_{2}$ &$x_{3}$ &$x_{4}$ \\
+\hline
+0 & 0 & 0 &0\\
+0 & 0 & 1 &1\\
+0 & 1 & 0 &1\\
+0 & 1 & 1 &0\\
+1 & 0 & 0 &1\\
+1 & 0 & 1 &0\\
+1 & 1 & 0 &0\\
+1 & 1 & 1 &1\\
+\end{tabular}
+\end{center}
+\end{table}
+
+$x_4 = x_{1} + x_{2} + x_{3}$. Aquí nos referimos a la suma en el campo de los binarios
+\end{document}
