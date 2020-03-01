@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.5)  29 FEB 2020 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.5)  1 MAR 2020 01:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -379,25 +379,25 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 11.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 64--68
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 73--77
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 70--95
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 79--104
 
  []
 
-[5] (./Resumen.aux) ) 
+[7] (./Resumen.aux) ) 
 Here is how much of TeX's memory you used:
- 856 strings out of 492982
- 8441 string characters out of 6134896
- 63988 words of memory out of 5000000
- 4461 multiletter control sequences out of 15000+600000
+ 857 strings out of 492982
+ 8449 string characters out of 6134896
+ 69988 words of memory out of 5000000
+ 4462 multiletter control sequences out of 15000+600000
  11698 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 25i,10n,26p,2090b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,10n,26p,2908b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
@@ -411,10 +411,10 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msam10.pfb>
-Output written on Resumen.pdf (5 pages, 154430 bytes).
+Output written on Resumen.pdf (7 pages, 160868 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
