@@ -1,5 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc} %para poder usar acentos 
+\usepackage{amssymb}
 \title{Resumen coloquio victor neumann lara 2020}
 \date{\today}
 \author{Rodrigo Chávez}
@@ -29,11 +30,36 @@ Notemos que $\tau^*(R, B) = 4$ los arboles deben cruzarse al menos una vez. Diga
 
 Para provar el teorema 2 harán falta unas definiciones. un poligono espiral ortogonal es un poligono cuyas fronteras consiste de dos cadenas de aristas llamdas interna y externa. Cada angulo interno de la cadena exterior es de $\frac{\pi }{2}$ y cada angulo externo de la cadena interna es de $\frac{3\pi }{2}$. observemos que pueden compartir aristas las cadenas entonces se veria como una arista.
 \begin{lemma}
-Sea $P$ un poligono espiral ortogonal en el plano latice y $S$ un conjunto de planos en posicion general contenido en $P$ entonces existe un $S-arbol \, T$  tal que $\Delta (T) \leq 3$ y $T$ esta dentro de $P$
+Sea $P$ un poligono espiral ortogonal en el plano latice y $S$ un conjunto de planos en posicion general contenido en $P$ y asumamos que cada arista de la cadena exterior tiene exactamente un punto y la cadena interior tambien tiene exactamente un punto o esta incluida en alguna cadena exterior. Entonces existe un $S-arbol \, T$  tal que $\Delta (T) \leq 3$ y $T$ esta dentro de $P$
 \end{lemma}
 
-Aqui la prueba: una arista interna incluida en una externa lo llamamos rectangulo aplanado. Notemos que un rectangulo aplanado puede contener un punto de $S$ como se puede observar en el dibujo
+Aqui la prueba: una arista interna incluida en una externa lo llamamos rectangulo aplanado. Notemos que un rectangulo aplanado puede contener un punto de $S$ como se puede observar en el dibujo. Ahi podemos econtrar dos rectangulos planos, uno con un punto y el otro sin puntos. Para preparar la construccion del $S-arbol$ descomponemos el poligono espiral ortogonal como se muestra en la figura donde $X, Y, Z$ denotan  rectangulos cerrados la arista superior de $Y$ esta contenida en la arista inferior de $X$ y la arista izquierdas de $X$ y $Y$ forman la arista de la cadena exterior de $P$ dos rectangulos consecutivos tienen las misma propiedades. Si $P$ no tiene rectangulos planos entonces los descomponemo como se muestra en la figura. Y si sí tiene rectangulos vacios los descomponemos como se muestra en esta otra figura donde algunos rectangulos son planos, esos los eliminamos entonces nos quedamos con algunos poligonos espiral sin rectangulos plano que podemos descomponer.
 
+Observacion 1: no pueden existir 3 rectangulos vacios consecutivos.
+Prueba: de otra manera alguna arista de la cadena exterior no tiene puntos lo que contradice la suposicion. 
+
+Esta figura muestra el esquema de la construccion del $S-arbol$. Primero construiamos  una trayectoria del punto más "afuera" al de más adentro. y despues los unimos como se muestra en la segunda parte. Utilizando la cadena interna como referencia, digamos es el inferior, entonces podevos ver cual es el superior, izquierdo y derecho.
+Las trayectorias que construimos en los rectangulos no planos $P_i$ tienen las siguientes propiedades \begin{enumerate}
+\item comienzan en el punto superior y terminan el el inferior
+\item $P_i$ pasa por todos los puntos del rectangulo
+\item Cada segmento de $L-linea$ $xy$ tal que $x$ esta arriba de $y$ empieza en x hace derecha o izquierda y termina en y por arriba. Como en la figura.
+\end{enumerate}
+Para rectangulos planos con un punto $x_i$ este punto es el superior, inferior, derecho e izquierdo. Despues para rectangulos planos sin puntos pondremos un punto un punto dummy en el centro del rectangulo plano que tambien es el superior, inferior, derecho e izquierdo. En estos dos casos su trayectoria es un punto y vacia respectivamente
+
+A continuacion conectamos trayecotorias $P_i$ y $P_{i+1}$ como sigue
+
+Caso 1. $P_{i+1} \neq \emptyset $ 
+En este caso siempre podremos conectar el inferior del rectangulo $i$ con el punto derecho del rectangulo $i+1$ como se ve en las siguientes figuras
+
+Caso 2. $P_{i+1} =\emptyset $ 
+En este caso siempre podremos conectar el punto de la derecha del rectangulo $i$ con el punto dummy del rectangulo $i+1$ con un segmento de $L-linea$ sin generar cruces. 
+
+Consecuentemente ignorando los puntos dummy obtenemos un arbol $T$ en $S$ tal que \begin{enumerate}
+\item $\Delta (T) \leq 3$
+\item $T$ esta contenido en el poligono espiral
+\end{enumerate}
+
+Por la observacion 1 solo pueden haber siete casos, mostrados aqui pero los casos del 1 al 4 contadicen la suposicion de que cada arista de la cadena interna contiene exactamente un punto de $S$. En los demas casos las aristas son segmentos de $L-lineas$  $\hfill\ensuremath{\blacksquare} $
 
 (esto es para despues: ahora teniendo estos arboles ajenos utilizando 1 punto steiner [decir que es un punto steiner] nos gustaria encontrar no arboles sino trayectorias, y es aquí donde extendimos el resultado dado por Mikio kano. Tambien pensar en poner que la conjetura se resulve parcialmente con el teorema que dice que se puede encajar cualquier arbol con grado maximo 3 estando todos estos en una trayetoria)
 \\\\
